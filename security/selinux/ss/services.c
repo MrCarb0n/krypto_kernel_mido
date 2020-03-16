@@ -70,8 +70,11 @@
 #include "ebitmap.h"
 #include "audit.h"
 
+<<<<<<< HEAD
 int selinux_android_netlink_route;
 int selinux_android_netlink_getneigh;
+=======
+>>>>>>> 5bf422e070b0 ([REVERT 1/2] "ANDROID: selinux: modify RTM_GETLINK permission")
 int selinux_policycap_netpeer;
 int selinux_policycap_openperm;
 int selinux_policycap_alwaysnetwork;
@@ -1992,10 +1995,13 @@ static void security_load_policycaps(void)
 						  POLICYDB_CAPABILITY_OPENPERM);
 	selinux_policycap_alwaysnetwork = ebitmap_get_bit(&policydb.policycaps,
 						  POLICYDB_CAPABILITY_ALWAYSNETWORK);
+<<<<<<< HEAD
 
 	selinux_android_netlink_route = policydb.android_netlink_route;
 	selinux_android_netlink_getneigh = policydb.android_netlink_getneigh;
 	selinux_nlmsg_init();
+=======
+>>>>>>> 5bf422e070b0 ([REVERT 1/2] "ANDROID: selinux: modify RTM_GETLINK permission")
 }
 
 static int security_preserve_bools(struct policydb *p);
